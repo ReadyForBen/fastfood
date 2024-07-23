@@ -52,9 +52,9 @@ const Login: NextPage = ({ }) => {
 		<div className="flex bg-infobg h-screen bg-no-repeat bg-cover bg-center" >
 			<div className=" bg-white dark:bg-gray-800 dark:bg-opacity-50 dark:backdrop-blur-lg w-11/12 sm:w-4/6 md:3/6 xl:w-5/12 mx-auto my-auto rounded-3xl p-6" 					>
 				<div>
-					<p className="font-bold text-2xl ">👋 Welcome to Tovy</p>
+					<p className="font-bold text-2xl ">👋 Welcome back!</p>
 					<p className="text-md text-gray-500 dark:text-gray-200">
-						You'll need to login to Tovy to use this page
+						Please login again to access our panel
 					</p>
 
 					<FormProvider {...methods}>
@@ -84,7 +84,7 @@ const Login: NextPage = ({ }) => {
 					</div>
 				</div>
 				<div className="w-full flex">
-					<a className="pt-4 mx-auto  text-gray-400 hover:underline cursor-pointer hover:text-blue-600 transition " href="https://tovyblox.xyz"> © Tovy 2022 </a>
+					<a className="pt-4 mx-auto  text-gray-400 hover:underline cursor-pointer hover:text-blue-600 transition " href=""> © Darcayz </a>
 				</div>
 			</div>
 		</div>
