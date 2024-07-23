@@ -13,9 +13,7 @@ export default async function handler(
     const { content } = req.body;
     const discordWebhookUrl = req.headers['discord-webhook-url'];
 
-    if (!content) {
-      return res.status(400).json({ message: 'Content is required' });
-    }
+ 
 
     if (!discordWebhookUrl || typeof discordWebhookUrl !== 'string') {
       return res.status(400).json({ message: 'Discord webhook URL is required in headers' });
