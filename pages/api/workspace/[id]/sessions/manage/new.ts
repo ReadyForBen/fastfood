@@ -1,14 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import prisma, { SessionType } from '@/utils/database';
-import { withPermissionCheck } from '@/utils/permissionsManager'
+//import { withPermissionCheck } from '@/utils/permissionsManager'
 type Data = {
 	success: boolean
 	error?: string
 	session?: SessionType
 }
 
-export default withPermissionCheck(handler, 'manage_sessions');
+//export default withPermissionCheck(handler, 'manage_sessions');
 
 export async function handler(
 	req: NextApiRequest,
