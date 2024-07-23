@@ -21,7 +21,7 @@ import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 export const getServerSideProps: GetServerSideProps = withPermissionCheckSsr(async (context) => {
 	const { id } = context.query;
-	const games = (await noblox.getGroupGames(Number(id))).map(game => ({
+	const games = (await noblox.getGroupGames({groupId: 34566127, accessFilter: 'All', sortOrder: 'Asc', limit: '100'})).map(game => ({
 		name: game.name,
 		id: game.id,
 	}));
