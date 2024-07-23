@@ -74,20 +74,18 @@ const Home: NextPage = () => {
 	return (
 		<div>
 			<Head>
-				<title>Tovy</title>
+				<title>Fast Food Roleplays</title>
 			</Head>
 
 			<div className="h-screen bg-gray-100 dark:bg-gray-700">
 				<Topbar />
 				<div className="lg:px-48 md:px-32 sm:px-20 xs:px-9 px-8 ">
 					<div className=" pt-10 flex">
-						<p className="my-auto text-2xl font-bold"> Select a Workspace </p>
+						<p className="my-auto text-2xl font-bold"> Welcome back! Please select our group</p>
 						<div className="ml-auto">
-							<Button  onClick={() => setIsOpen(true)}>
-								New Workspace
-							</Button>
+							
 							<Button onClick={() => checkRoles()}> 
-								Check roles
+								Update your roles
 							</Button>
 						</div>
 					</div>
