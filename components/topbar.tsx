@@ -30,10 +30,10 @@ const Topbar: NextPage = () => {
 						<img
 							src='./Icon_Transparent.svg'
 							className="rounded-full h-8 w-8 my-auto"
-							alt="Tovy logo"
+							alt="Fast Food Roleplays"
 						/>
 						<p className="my-auto text-md font-medium pl-2 pr-2">
-							Tovy
+						Fast Food Roleplays
 						</p>
 					</button>
 					<Menu as="div" className="relative inline-block text-left">

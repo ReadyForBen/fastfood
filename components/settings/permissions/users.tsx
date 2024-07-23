@@ -142,7 +142,7 @@ const Button: FC<Props> = (props) => {
 
 													{users.filter((user: any) => user.roles[0].id === role.id).length > 100 ? (
 														<p className="text-gray-500 text-sm">
-															Tovy cant display more than 100 users
+															Fast Food Roleplays cant display more than 100 users
 														</p>
 													) : (
 														<>
