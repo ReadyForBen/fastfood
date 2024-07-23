@@ -15,7 +15,7 @@ type FormData = {
 };
 
 const SignUp: NextPage = ({ }) => {
-	const [selectedColor, setSelectedColor] = useState("bg-[#2196f3]");
+	const [selectedColor, setSelectedColor] = useState("bg-[#f22c16]");
 	const [login, setLogin] = useRecoilState(loginState);
 	const [code, setCode] = useState("");
 	const [verificationError, setVerificationError] = useState(false);
@@ -78,9 +78,9 @@ const SignUp: NextPage = ({ }) => {
 		<div className="flex bg-infobg h-screen bg-no-repeat bg-cover bg-center">
 			<Slider activeSlide={selectedSlide}>
 				<div>
-					<p className="font-bold text-2xl ">Create an account</p>
+					<p className="font-bold text-2xl ">Link account</p>
 					<p className="text-md text-gray-500 dark:text-gray-200">
-						Create a new account for this group's Tovy
+						Please link your ROBLOX account to login
 					</p>
 					<FormProvider {...methods}>
 						<form className="mb-8 mt-2" onSubmit={handleSubmit(nextSlide)}>
@@ -100,14 +100,14 @@ const SignUp: NextPage = ({ }) => {
 				</div>
 				<div>
 					<p className="font-bold text-2xl" id="2">
-						Make your Tovy account
+						Link account
 					</p>
 					<p className="text-md text-gray-500 dark:text-gray-200">
-						You need to create a Tovy account to continue
+						Please link your ROBLOX account to login
 					</p>
 					<FormProvider {...signupform}>
 						<form className="mb-8 mt-2" onSubmit={handleSubmit(createAccount)}>
-							<Input type="password" {...signupform.register("password", { required: { value: true, message: "You must enter a password, silly" } })} label="Password" />
+							<Input type="password" {...signupform.register("password", { required: { value: true, message: "You must enter a password" } })} label="Password" />
 							<Input type="password" {...signupform.register("verifypassword", { required: { value: true, message: "This field is required" }, validate: { checkpassword: (d) => d === signupform.getValues('password') || 'Passwords must match' } })} label="Verify password" />
 						</form>
 					</FormProvider>
@@ -126,7 +126,7 @@ const SignUp: NextPage = ({ }) => {
 						</Button>
 					</div>
 					<div className="w-full flex">
-						<a className="pt-4 mx-auto  text-gray-400 hover:underline cursor-pointer hover:text-blue-600 transition " href="https://tovyblox.xyz"> © Tovy 2022 </a>
+						<a className="pt-4 mx-auto  text-gray-400 hover:underline cursor-pointer hover:text-blue-600 transition "> © Darcayz </a>
 					</div>
 				</div>
 				<div>
@@ -150,19 +150,19 @@ const SignUp: NextPage = ({ }) => {
 					<div className="mt-7 flex">
 						<button
 							onClick={() => setSelectedSlide(0)}
-							className="bg-[#2196F3] ml-auto py-3 text-sm rounded-xl px-6 text-white font-bold hover:bg-blue-300 transition"
+							className="bg-[#f22c16] ml-auto py-3 text-sm rounded-xl px-6 text-white font-bold hover:bg-blue-300 transition"
 						>
 							Back
 						</button>
 						<button
 							onClick={signupform.handleSubmit(createAccount)}
-							className="ml-4 bg-[#2196F3] py-3 text-sm rounded-xl px-6 text-white font-bold hover:bg-blue-300 transition"
+							className="ml-4 bg-[#f22c16] py-3 text-sm rounded-xl px-6 text-white font-bold hover:bg-blue-300 transition"
 						>
-							Verify
+							Link
 						</button>
 					</div>
 					<div className="w-full flex">
-						<a className="pt-4 mx-auto  text-gray-400 hover:underline cursor-pointer hover:text-blue-600 transition " href="https://tovyblox.xyz"> © Tovy 2022 </a>
+						<a className="pt-4 mx-auto  text-gray-400 hover:underline cursor-pointer hover:text-blue-600 transition "> © Darcayz</a>
 					</div>
 				</div>
 			</Slider>
