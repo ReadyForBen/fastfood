@@ -70,13 +70,13 @@ const Login: NextPage = ({ }) => {
 	return (
 		<div className="flex bg-infobg h-screen bg-no-repeat bg-cover bg-center">
 			<p className="text-md -mt-1 text-white absolute top-4 left-4 xs:hidden md:text-6xl font-extrabold">
-				Welcome <br /> to <span className="text-[#2196f3] "> Tovy </span>
+				Welcome <br /> to <span className="text-[#2196f3] "> Fast Food Roleplays </span>
 			</p>
 			<Slider activeSlide={selectedSlide}>
 				<div>
 					<p className="font-bold text-2xl ">Let's get started</p>
 					<p className="text-md -mt-1 text-gray-500 dark:text-gray-200">
-						To configure your Tovy instance, we'll need some infomation
+						To configure your Fast Food Roleplays account, we'll need some infomation
 					</p>
 					<FormProvider {...methods}>
 						<form className="mt-2" onSubmit={handleSubmit(nextSlide)}>
@@ -116,10 +116,10 @@ const Login: NextPage = ({ }) => {
 				</div>
 				<div >
 					<p className="font-bold text-2xl" id="2">
-						Make your Tovy account
+						Make your Fast Food Roleplays account
 					</p>
 					<p className="text-md -mt-1 text-gray-500 dark:text-gray-200">
-						You need to create a Tovy account to continue
+						You need to create a Fast Food Roleplays account to continue
 					</p>
 					<FormProvider {...signupform}>
 					   <Input  {...signupform.register("username")} label="Username" />
