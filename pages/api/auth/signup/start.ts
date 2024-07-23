@@ -27,15 +27,16 @@ export async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   }
 
   let userid: number | undefined;
-		  console.log("USER ID: "+userid);
+		  console.log("USERNAME: "+username);
 
   try {
-    userid = await noblox.getIdFromUsername(username) as number | undefined;
+    userid = await noblox.getIdFromUsername(username) as number;
   } catch (error) {
 	  console.log("USER ID: "+userid);
 	  
     console.error('Error fetching user ID:', error);
   }
+	  console.log("USER ID FETCHED: "+userid);
 
   if (!userid) {
     return res.status(404).json({ success: false, error: 'Username not found' });
@@ -50,5 +51,6 @@ export async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   };
   await req.session.save();
 
+	console.log("VERIFY CODE:"+verificationCode);
   res.status(200).json({ success: true, code: verificationCode });
 }
