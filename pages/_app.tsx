@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	return (
 		<RecoilRoot>
 			<Head>
-				<title>Tovy</title>
+				<title>Fast Food Roleplays</title>
 			</Head>
 			<RecoilNexus />
 			{!loading && (
