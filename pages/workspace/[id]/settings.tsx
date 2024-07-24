@@ -97,7 +97,37 @@ const Settings: pageWithLayout<Props> = ({ users, roles, grouproles }) => {
 					`w-1/2 text-lg rounded-lg border-[#AAAAAA] border leading-5 font-medium text-left p-3 px-2 transition ${selected ? "bg-gray-200 hover:bg-gray-300" : "  hover:bg-gray-300"
 					}`
 				}>
-					Permission
+					Permissions
+				</Tab>
+				<Tab className={({ selected }) =>
+					`w-1/2 text-lg rounded-lg border-[#AAAAAA] border leading-5 font-medium text-left p-3 px-2 transition ${selected ? "bg-gray-200 hover:bg-gray-300" : "  hover:bg-gray-300"
+					}`
+				}>
+					Privacy
+				</Tab>
+				<Tab className={({ selected }) =>
+					`w-1/2 text-lg rounded-lg border-[#AAAAAA] border leading-5 font-medium text-left p-3 px-2 transition ${selected ? "bg-gray-200 hover:bg-gray-300" : "  hover:bg-gray-300"
+					}`
+				}>
+					API
+				</Tab>
+				<Tab className={({ selected }) =>
+					`w-1/2 text-lg rounded-lg border-[#AAAAAA] border leading-5 font-medium text-left p-3 px-2 transition ${selected ? "bg-gray-200 hover:bg-gray-300" : "  hover:bg-gray-300"
+					}`
+				}>
+					Partner with us
+				</Tab>
+				<Tab className={({ selected }) =>
+					`w-1/2 text-lg rounded-lg border-[#AAAAAA] border leading-5 font-medium text-left p-3 px-2 transition ${selected ? "bg-gray-200 hover:bg-gray-300" : "  hover:bg-gray-300"
+					}`
+				}>
+					Ranking
+				</Tab>
+				<Tab className={({ selected }) =>
+					`w-1/2 text-lg rounded-lg border-[#AAAAAA] border leading-5 font-medium text-left p-3 px-2 transition ${selected ? "bg-gray-200 hover:bg-gray-300" : "  hover:bg-gray-300"
+					}`
+				}>
+					Billing
 				</Tab>
 			</Tab.List>
 			<Tab.Panels>
