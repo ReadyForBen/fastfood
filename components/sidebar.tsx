@@ -32,7 +32,7 @@ const Topbar: NextPage = () => {
 			accessible: workspace.yourPermission.includes('view_entire_groups_activity'),
 		},
 		{
-			name: "Allies",
+			name: "Alliances",
 			href: "/workspace/[id]/allies",
 			icon: IconBuildingCommunity,
 			
@@ -52,8 +52,29 @@ const Topbar: NextPage = () => {
 			current: false,
 		},
 		{
-			name: "Docs",
+			name: "Resources",
 			href: "/workspace/[id]/docs",
+			icon: IconFileText,
+			accessible: workspace.settings.guidesEnabled,
+			current: false,
+		},
+			{
+			name: "API",
+			href: "/workspace/[id]/api",
+			icon: IconFileText,
+			accessible: workspace.settings.guidesEnabled,
+			current: false,
+		},
+			{
+			name: "Games",
+			href: "/workspace/[id]/games",
+			icon: IconFileText,
+			accessible: workspace.settings.guidesEnabled,
+			current: false,
+		},
+			{
+			name: "Bans",
+			href: "/workspace/[id]/bans",
 			icon: IconFileText,
 			accessible: workspace.settings.guidesEnabled,
 			current: false,
