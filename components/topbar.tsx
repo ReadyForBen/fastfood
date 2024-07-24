@@ -15,7 +15,7 @@ const Topbar: NextPage = () => {
 			userId: 1,
 			username: '',
 			displayname: '',
-			canMakeWorkspace: false,
+			canMakeWorkspace: true,
 			thumbnail: '',
 			workspaces: [],
 		});
@@ -30,10 +30,10 @@ const Topbar: NextPage = () => {
 						<img
 							src='./Icon_Transparent.svg'
 							className="rounded-full h-8 w-8 my-auto"
-							alt="Fast Food Roleplays"
+							alt="microdot"
 						/>
 						<p className="my-auto text-md font-medium pl-2 pr-2">
-						Fast Food Roleplays
+						microdot
 						</p>
 					</button>
 					<Menu as="div" className="relative inline-block text-left">
@@ -70,7 +70,40 @@ const Topbar: NextPage = () => {
 												}  px-3 py-2 text-sm rounded-xl m-1 mb-0 font-medium flex flex-row cursor-pointer`}
 										>
 											<IconSettings size={22} className="inline-block" />
-											<p className="ml-2"> Account settings </p>
+											<p className="ml-2"> Settings </p>
+										</a>
+									)}
+								</Menu.Item>
+								<Menu.Item>
+									{({ active }) => (
+										<a
+											className={`${active ? "bg-tovybg text-white" : "text-gray-700 dark:text-white"
+												}  px-3 py-2 text-sm rounded-xl m-1 mb-0 font-medium flex flex-row cursor-pointer`}
+										>
+											<IconSettings size={22} className="inline-block" />
+											<p className="ml-2"> Discord Server </p>
+										</a>
+									)}
+								</Menu.Item>
+								<Menu.Item>
+									{({ active }) => (
+										<a
+											className={`${active ? "bg-tovybg text-white" : "text-gray-700 dark:text-white"
+												}  px-3 py-2 text-sm rounded-xl m-1 mb-0 font-medium flex flex-row cursor-pointer`}
+										>
+											<IconSettings size={22} className="inline-block" />
+											<p className="ml-2"> Premium </p>
+										</a>
+									)}
+								</Menu.Item>
+								<Menu.Item>
+									{({ active }) => (
+										<a
+											className={`${active ? "bg-tovybg text-white" : "text-gray-700 dark:text-white"
+												}  px-3 py-2 text-sm rounded-xl m-1 mb-0 font-medium flex flex-row cursor-pointer`}
+										>
+											<IconSettings size={22} className="inline-block" />
+											<p className="ml-2"> Settings </p>
 										</a>
 									)}
 								</Menu.Item>
